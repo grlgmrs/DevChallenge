@@ -1,0 +1,22 @@
+[
+  {
+    "image": "playlist1.jpg",
+    "title": "Only STARBURST",
+    "tracks_count": 24
+  },
+  {
+    "image": "playlist2.jpg",
+    "title": "Mike Vella",
+    "tracks_count": 12
+  },
+  {
+    "image": "playlist3.jpg",
+    "title": "the best singles s2",
+    "tracks_count": 163
+  },
+  {
+    "image": "playlist4.jpg",
+    "title": "Indies",
+    "tracks_count": 138
+  }
+]

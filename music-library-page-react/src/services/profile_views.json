@@ -1,0 +1,20 @@
+[
+  {
+    "image": "view1.jpg",
+    "name": "Jenny Villa",
+    "visited_at": "1 day ago",
+    "albums_count": 4
+  },
+  {
+    "image": "view2.jpg",
+    "name": "Aquila",
+    "visited_at": "3 days ago",
+    "albums_count": 2
+  },
+  {
+    "image": "view3.jpg",
+    "name": "This is War",
+    "visited_at": "2 weeks ago",
+    "albums_count": 5
+  }
+]
