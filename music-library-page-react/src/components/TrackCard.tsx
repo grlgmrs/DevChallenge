@@ -2,15 +2,24 @@ import React from "react";
 
 import { Track } from "../services/api";
 
-export default function TrackCard({ ...attr }, track: Track) {
+import "../styles/components/track-card.css";
+
+export default function TrackCard(track: Track) {
+  const trackImg = require(`../images/${track.image.path}`);
+  const trackImgPosition = `${track.image.anchor.x}% ${track.image.anchor.y}%`;
+
   return (
     <div className="track-block">
-      <div className="track-image">
-        <img src={`../assets/${track.image}`} alt={track.title} />
-      </div>
+      <div
+        className="track-image"
+        style={{
+          backgroundImage: `url("${trackImg}")`,
+          backgroundPosition: trackImgPosition,
+        }}
+      />
       <div className="track-text">
-        <span className="track-title">${track.title}</span>
-        <span className="track-album">${track.album}</span>
+        <span className="track-title">{track.title}</span>
+        <span className="track-album">{track.album}</span>
       </div>
     </div>
   );

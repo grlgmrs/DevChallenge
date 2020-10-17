@@ -1,9 +1,14 @@
 /*
   Preto: #040517;
-  Branco: #e5e5e5e7;
-  Cinza: #f5f5f555;
+  Branco: #d1d1d3;
+  Cinza: #626071;
   Azul: rgb(32, 15, 86);
 */
+
+:root {
+  --home-content-width: calc(100vw - 275px);
+  --home-content-children-max-width: calc(100vw - 365px);
+}
 
 #home {
   display: flex;
@@ -15,21 +20,39 @@
 
 .content {
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  flex-direction: row;
+  flex-wrap: wrap;
 
+  width: 100%;
+  max-width: var(--home-content-width);
   min-height: 100vh;
-  padding: 20px 0px 20px 70px;
+  padding: 20px 20px 20px 70px;
 }
 
+/* START COMMON */
+.content #featured-playlists,
+.content #tracks,
+.content #profile-views {
+  margin-top: 40px;
+}
+
+.content #featured-playlists h2,
+.content #tracks h2,
+.content #profile-views,
+h2 {
+  color: #d1d1d3;
+}
+/* END COMMON */
+
+/* START SEARCHBAR */
 .content .search-bar {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
 
-  color: #f5f5f555;
-  caret-color: #e5e5e5e7;
+  color: #626071;
+  caret-color: #d1d1d3;
 }
 
 .content .search-bar .icon {
@@ -39,27 +62,21 @@
 }
 
 .content .search-bar input[type="text"]:focus + .icon {
-  color: #e5e5e5e7;
+  color: #d1d1d3;
 }
 
 .content .search-bar input[type="text"] {
   background: none;
   border: none;
 
-  color: #e5e5e5e7;
+  color: #d1d1d3;
 }
+/* END SEARCHBAR */
 
-.content #featured-playlists {
-  margin-top: 40px;
-}
-
-.content #featured-playlists h2 {
-  color: #e5e5e5e7;
-}
-
+/* START FEATURED-PLAYLISTS */
 .content #featured-playlists .featured-playlist-container {
   width: 100%;
-  max-width: calc(100vw - 360px);
+  max-width: var(--home-content-children-max-width);
   padding: 20px 0 20px 5px;
 
   display: flex;
@@ -67,18 +84,41 @@
 
   overflow-x: visible;
   overflow-y: hidden;
+}
+/* END FEATURED-PLAYLISTS */
+
+/* START PROFILE-VIEWS */
+.content #profile-views {
+  width: 100%;
+  max-width: calc(var(--home-content-children-max-width) / 2);
+}
+
+.content #profile-views .profile-views-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  overflow-y: hidden;
+  overflow-x: auto;
+
+  padding: 20px 0 20px 5px;
+}
+/* END PROFILE-VIEWS */
+
+/* START TRACKS */
+.content #tracks {
+  width: 100%;
+  max-width: calc(var(--home-content-children-max-width) / 2);
+}
+
+.content #tracks .tracks-container {
+  width: 100%;
+  display: flex;
+
+  overflow-y: hidden;
+  overflow-x: auto;
 
   scrollbar-color: rgb(32, 15, 86) #49349c11;
   scrollbar-width: thin;
 }
-
-.content #featured-playlists .featured-playlist-container::-webkit-scrollbar-thumb {
-  background-color: rgb(32, 15, 86);
-  border-radius: 3px;
-}
-
-.content #featured-playlists .featured-playlist-container::-webkit-scrollbar {
-  background-color: #49349c11;
-  height: 6px;
-  border-radius: 3px;
-}
+/* END TRACKS */

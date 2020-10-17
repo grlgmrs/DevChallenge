@@ -7,7 +7,7 @@
   justify-content: center;
 
   background: #040517;
-  color: #f5f5f555;
+  color: #626071;
 }
 
 .sidebar .profile-information-container {
@@ -52,7 +52,7 @@
   font-size: 1.25rem;
   font-weight: 700;
 
-  color: #e5e5e5e7;
+  color: #d1d1d3;
 }
 
 .sidebar
@@ -75,7 +75,7 @@
   .profile-information-description
   .edit-profile:hover {
   cursor: pointer;
-  color: #e5e5e5e7;
+  color: #d1d1d3;
 }
 
 .sidebar .lists {
@@ -93,7 +93,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 
   margin-bottom: 12px;
 
@@ -101,12 +101,12 @@
 }
 
 .sidebar .lists ul li:hover {
-  color: #e5e5e5e7;
+  color: #d1d1d3;
   cursor: pointer;
 }
 
 .sidebar .lists ul li.active {
-  color: #e5e5e5e7;
+  color: #d1d1d3;
 }
 
 .sidebar .lists ul li .list-icon {

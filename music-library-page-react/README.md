@@ -67,7 +67,7 @@ O modelo final está disponível na pasta "design"
 ## Cores:
 
 Preto: #040517;
-Branco: #e5e5e5e7;<br>
+Branco: #d1d1d3;<br>
 Azul: rgb(32, 15, 86);
 
 ## Modelo:

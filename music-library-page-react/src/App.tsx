@@ -6,6 +6,8 @@ import "./styles/pages/home.css";
 
 import Sidebar from "./components/Sidebar";
 import PlaylistCard from "./components/PlaylistCard";
+import ProfileViewCard from "./components/ProfileViewCard";
+import TrackCard from "./components/TrackCard";
 
 import {
   getPlaylistData,
@@ -27,14 +29,10 @@ function App() {
     setTrackData(getTrackData());
   }, []);
 
-  function featuredPlaylistContainerWheel(e: React.WheelEvent<HTMLDivElement>) {
+  function verticalToHorizontalWheel(e: React.WheelEvent<HTMLDivElement>) {
     e.preventDefault();
 
-    const featuredPlaylistsContainer = document.querySelector(
-      ".featured-playlist-container"
-    )!;
-
-    featuredPlaylistsContainer.scrollLeft += e.deltaY * 30;
+    e.currentTarget.scrollLeft += e.deltaY * 30;
   }
 
   return (
@@ -52,7 +50,7 @@ function App() {
 
           <div
             className="featured-playlist-container"
-            onWheel={featuredPlaylistContainerWheel}
+            onWheel={verticalToHorizontalWheel}
           >
             {playlistData?.map((playlist) => (
               <PlaylistCard {...playlist} key={playlist.image} />
@@ -60,9 +58,25 @@ function App() {
           </div>
         </div>
 
-        <div id="profile-views"></div>
+        <div id="profile-views">
+          <h2>Profile Views</h2>
 
-        <div id="tracks"></div>
+          <div className="profile-views-container">
+            {profileViewData?.map((profileView) => (
+              <ProfileViewCard {...profileView} key={profileView.image.path} />
+            ))}
+          </div>
+        </div>
+
+        <div id="tracks">
+          <h2>Tracks</h2>
+
+          <div className="tracks-container" onWheel={verticalToHorizontalWheel}>
+            {trackData?.map((track) => (
+              <TrackCard {...track} key={track.image.path} />
+            ))}
+          </div>
+        </div>
       </main>
     </div>
   );

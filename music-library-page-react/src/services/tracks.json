@@ -1,36 +1,85 @@
 [
   {
-    "image": "track1.jpg",
+    "image": {
+      "path": "track1.jpg",
+      "anchor": {
+        "x": 0,
+        "y": 50
+      },
+      "zoom": 1
+    },
     "title": "Mahara Bon",
     "album": "Sexy in Paris"
   },
   {
-    "image": "track2.jpg",
+    "image": {
+      "path": "track2.jpg",
+      "anchor": {
+        "x": 50,
+        "y": 50
+      },
+      "zoom": 1
+    },
     "title": "Donna",
     "album": "Pseudo-Life"
   },
   {
-    "image": "track3.jpg",
+    "image": {
+      "path": "track3.jpg",
+      "anchor": {
+        "x": 50,
+        "y": 50
+      },
+      "zoom": 1
+    },
     "title": "Avven",
     "album": "Magic"
   },
   {
-    "image": "track4.jpg",
+    "image": {
+      "path": "track4.jpg",
+      "anchor": {
+        "x": 50,
+        "y": 50
+      },
+      "zoom": 1
+    },
     "title": "Cony Matt",
     "album": "Living in hell"
   },
   {
-    "image": "track5.jpg",
+    "image": {
+      "path": "track5.jpg",
+      "anchor": {
+        "x": 50,
+        "y": 50
+      },
+      "zoom": 1
+    },
     "title": "Claudia Cany",
     "album": "Remember"
   },
   {
-    "image": "track6.jpg",
+    "image": {
+      "path": "track6.jpg",
+      "anchor": {
+        "x": 50,
+        "y": 50
+      },
+      "zoom": 1
+    },
     "title": "Samm",
     "album": "Same-Huly"
   },
   {
-    "image": "track7.jpg",
+    "image": {
+      "path": "track7.jpg",
+      "anchor": {
+        "x": 50,
+        "y": 50
+      },
+      "zoom": 1
+    },
     "title": "Pacify",
     "album": "Portrait"
   }

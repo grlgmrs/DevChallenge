@@ -9,14 +9,28 @@ export interface Playlist {
 }
 
 export interface ProfileView {
-  image: string;
+  image: {
+    path: string;
+    anchor: {
+      x: number;
+      y: number;
+    };
+    zoom: number;
+  };
   name: string;
   visitedAt: string;
   albumsCount: number;
 }
 
 export interface Track {
-  image: string;
+  image: {
+    path: string;
+    anchor: {
+      x: number;
+      y: number;
+    };
+    zoom: number;
+  };
   title: string;
   album: string;
 }
