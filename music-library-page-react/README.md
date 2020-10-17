@@ -1,8 +1,5 @@
-Search artists, playlists or tracks Dany Schudler Edit Profile Overview News Playlists
-Discover Dashboard Messages Notifications Account Featured Playlists Profile Views
-Tracks
+O desafio desenvolvido por <a href="https://www.linkedin.com/in/grlgmrs/">Gabriel Guimarães</a> está hospedado <a href="http://lmusic.grlgmrs.surge.sh/">aqui</a>.</br>
 
-<br />
 <p align="center">
     <img src="https://imgur.com/ipLHFFb.gif" alt="Logo" width="1000">
 
