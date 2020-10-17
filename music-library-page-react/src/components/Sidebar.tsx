@@ -9,12 +9,19 @@ import {
   FiBell,
   FiUser,
   FiSettings,
+  FiX,
 } from "react-icons/fi";
 
 import "../styles/components/sidebar.css";
 import profileImg from "../images/profile.jpg";
 
 export default function Sidebar() {
+  function handleNavigationListMobile(e: React.ChangeEvent<HTMLInputElement>) {
+    const lists = document.querySelector(".lists")!;
+
+    lists.classList[e.target.checked ? "add" : "remove"]("active");
+  }
+
   return (
     <aside className="sidebar">
       <div className="profile-information-container">
@@ -32,14 +39,29 @@ export default function Sidebar() {
         </div>
       </div>
 
+      <div className="open-list-mobile">
+        <input
+          type="checkbox"
+          id="open-list-mobile-button"
+          onChange={handleNavigationListMobile}
+        />
+        <label
+          className="open-list-mobile-button-styled"
+          htmlFor="open-list-mobile-button"
+        >
+          <div className="first-bar" />
+          <div className="second-bar" />
+        </label>
+      </div>
+
       <div className="lists">
+        <label
+          className="close-list-mobile-button-styled"
+          htmlFor="open-list-mobile-button"
+        >
+          <FiX size={34} />
+        </label>
         <ul className="discover-list">
-          {/* {icons.map((i) => (
-            <li className="active">
-              <IconBase {...i.icon} />
-              <span className="list-text">Overview</span>
-            </li>
-          ))} */}
           <li className="active">
             <FiAperture size={20} className="list-icon" />
             <span className="list-text">Overview</span>

@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 
-  scrollbar-color: rgb(32, 15, 86) #1c1737;
+  scrollbar-color: #2e0058 #1e0634;
   scrollbar-width: thin;
 }
 
@@ -16,12 +16,12 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(32, 15, 86);
+  background-color: #2e0058;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar {
-  background-color: #49349c11;
+  background-color: #1e0634;
   height: 6px;
   border-radius: 3px;
 }

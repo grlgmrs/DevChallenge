@@ -54,3 +54,9 @@
   font-size: 0.8rem;
   letter-spacing: 0.8px;
 }
+
+@media only screen and (max-width: 767px) {
+  .profile-view-block {
+    width: 100%;
+  }
+}

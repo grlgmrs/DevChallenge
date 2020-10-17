@@ -7,12 +7,16 @@
 
 :root {
   --home-content-width: calc(100vw - 275px);
-  --home-content-children-max-width: calc(100vw - 365px);
+  --home-content-padding-left: 70px;
+  --home-content-children-max-width: calc(
+    var(--home-content-width) - var(--home-content-padding-left) * 2
+  );
+  --sidebar-mobile-height: 110px;
 }
 
 #home {
   display: flex;
-  background: linear-gradient(to right, #0d1226 0%, #1f1734 100%);
+  background: linear-gradient(to right, #0d1226 0%, #220533 100%);
 
   min-height: 100vh;
   width: 100vw;
@@ -26,7 +30,7 @@
   width: 100%;
   max-width: var(--home-content-width);
   min-height: 100vh;
-  padding: 20px 20px 20px 70px;
+  padding: 20px 20px 20px var(--home-content-padding-left);
 }
 
 /* START COMMON */
@@ -49,7 +53,10 @@ h2 {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+
+  width: 100%;
+  max-width: var(--home-content-width);
 
   color: #626071;
   caret-color: #d1d1d3;
@@ -118,7 +125,25 @@ h2 {
   overflow-y: hidden;
   overflow-x: auto;
 
-  scrollbar-color: rgb(32, 15, 86) #49349c11;
-  scrollbar-width: thin;
+  padding: 20px 0 20px 5px;
 }
 /* END TRACKS */
+
+@media only screen and (max-width: 1110px) {
+  :root {
+    --home-content-width: 100vw;
+    --home-content-padding-left: 20px;
+  }
+
+  .content {
+    min-height: calc(100vh + var(--sidebar-mobile-height));
+    padding-bottom: calc(var(--sidebar-mobile-height) + 20px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .content #profile-views,
+  .content #tracks {
+    max-width: var(--home-content-children-max-width);
+  }
+}
