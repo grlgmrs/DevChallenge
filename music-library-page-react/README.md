@@ -1,4 +1,4 @@
-O desafio desenvolvido por <a href="https://www.linkedin.com/in/grlgmrs/">Gabriel Guimarães</a> está hospedado <a href="http://lmusic.grlgmrs.surge.sh/">aqui</a>.</br>
+O desafio desenvolvido por <a target="_blank" href="https://www.linkedin.com/in/grlgmrs/">Gabriel Guimarães</a> está hospedado <a href="https://lmusic.grlgmrs.com.br/">aqui</a>.</br>
 
 <p align="center">
     <img src="https://imgur.com/ipLHFFb.gif" alt="Logo" width="1000">
